@@ -10,10 +10,22 @@ int main() {
     cin>>a;
     cin>>b;
 
-for(int i=a;i<b;i++){
-  cout<<arr[i-1]<<endl;
+    int num_arr[2] = {a, b};
+    for(int i=0;i<2;i++){
+        if(num_arr[i]%2==0){
+            cout<<"even"<<endl;
 
-}
+        }
+        else{
+            cout<<"odd"<<endl;
+        }
+        if(num_arr[i]>=1&&num_arr[i]<=9){
+            cout<<arr[num_arr[i]-1]<<endl;
+        }
+
+
+    }
+
 
 
 
