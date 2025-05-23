@@ -3,30 +3,24 @@
 using namespace std;
 
 int main() {
-    // Complete the code.
-    string arr[9]={ "one","two","three","four","five","six","seven","eight","nine"};
-    int a,b;
-    cout<<"Enter 2 numbers ";
-    cin>>a;
-    cin>>b;
+    string arr[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    int a, b;
+    cout << "";
+    cin >> a>>b;
 
-    int num_arr[2] = {a, b};
-    for(int i=0;i<2;i++){
-        if(num_arr[i]%2==0){
-            cout<<"even"<<endl;
-
-        }
-        else{
-            cout<<"odd"<<endl;
-        }
-        if(num_arr[i]>=1&&num_arr[i]<=9){
-            cout<<arr[num_arr[i]-1]<<endl;
+    for (int i = a; i <= b; i++) {
+        if (i >= 1 && i <= 9) {
+            cout << arr[i - 1] << endl;
         }
 
-
+    else {
+        if (i % 2 == 0) {
+            cout << "even" << endl;
+        } else {
+            cout << "odd" << endl;
+        }
     }
-
-
+}
 
 
     return 0;
