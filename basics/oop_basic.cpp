@@ -7,7 +7,7 @@ public:
     string author;
     string name;
     int pages;
-    //constructor
+    //methods
     Book(string booK_name, string book_author, int book_pages) {
         name = booK_name;
         author = book_author;
