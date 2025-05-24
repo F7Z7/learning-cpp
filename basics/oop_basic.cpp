@@ -18,12 +18,12 @@ public:
         author="no info";
         pages=0;
     }
-    void print() {
-        cout << name << " " << author << " " << pages << endl;
-
-    }
+void print();//first initialise trhe fucntion inside adn then declare it outside
 
 };
+void Book::print() {
+    cout<<name<<" "<<author<<" "<<pages<<endl;
+}
 
 int main() {
     Book book1("Harry Potter", "Jk rowling", 300); //created objec tiwht constucitor
