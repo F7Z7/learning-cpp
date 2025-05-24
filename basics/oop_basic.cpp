@@ -2,20 +2,35 @@
 using namespace std;
 
 //classes are a new data type
-class Book{
-  public:
+class Book {
+public:
     string author;
     string name;
     int pages;
-  //
+    //constructor
+    Book(string booK_name, string book_author, int book_pages) {
+        name = booK_name;
+        author = book_author;
+        pages = book_pages;
+    }
+    Book() {
+        name="no info";
+        author="no info";
+        pages=0;
+    }
+    void print() {
+        cout << name << " " << author << " " << pages << endl;
+
+    }
+
 };
 
-int main(){
-Book book1;
-book1.name="Hp";//objects are instance of class
-book1.author="John";
-book1.pages=1;
-
-  cout<<book1.name<<book1.author<<book1.pages<<endl;
-  return 0;
+int main() {
+    Book book1("Harry Potter", "Jk rowling", 300); //created objec tiwht constucitor
+Book book2;
+    cout<<book2.name<<endl;//will print the default bvlaue,since it isnt initialised
+    // cout << book1.name << " " << book1.author << " " << book1.pages << endl;
+    book1.print();
+    // book2.print();
+    return 0;
 }
